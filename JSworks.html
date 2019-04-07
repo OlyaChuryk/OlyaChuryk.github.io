@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Startup</title>
+        <link rel="stylesheet" href="css/mainstyle.css">
+    </head>
+    <body>
+         <div class="header_line"></div>
+            <header> 
+                <h1 class="title">Startup publisher</h1>
+                <nav>
+                    <a href="homepage.html" >Startups</a>
+                    <a href="details.html ">Details</a>
+                    <a href="registration.html">Registration</a>
+                    <a href="JSworks.html" class="selected_nav">JSworks</a>
+                     <a href="index.html">Lab1</a>
+                </nav>
+            </header>
+            <div class="header_line"></div>
+               <h2 class="content_header">Working with JavaScript</h2>
+            <div class="header_line"></div>
+ <script>
+
+   var a = +prompt('Try to guess (case)', '');
+
+switch (a) {
+  case 1:
+    alert( 'Try again' );
+    break;
+  case 2:
+    alert( 'You guessed!' );
+    break;
+  case 3:
+    alert( 'Try again' );
+    break;
+  default:
+    alert( 'I don\'t know what you said' );
+}
+                        
+    </script>
+    
+             <script>
+
+   var a = +prompt('Try to guess (if)', '');
+          if(a===1 || a===3){
+              alert( 'Try again' );
+          } else if(a===2){
+             alert( 'You guessed!' ); 
+          }else{
+              alert( 'I don\'t know what you said' ); 
+          }           
+    </script>
+             <script>
+        now= new Date();
+      
+if (confirm("want to know what is the time now?")){
+    alert(now.getHours()+":"+now.getMinutes());
+}
+if (confirm("want to know what is the date now?")){
+    alert((now.getMonth() + 1) + "/"
++ now.getDate() + "/" +
+(1900 + now.getYear()));
+}
+           </script>
+         <a href="index2_5.html">Next part of the JavaScript Lab</a>
+           <b>Press the back button</b> 
+<input type="button" value="Back" onclick="previousPage()"> 
+<script> 
+function previousPage() { 
+    window.history.back(); 
+  <div class="content">
+</script>
+       
+    </body>
+</html>

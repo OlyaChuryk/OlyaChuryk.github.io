@@ -1,0 +1,28 @@
+h1{
+    font-family: cursive;
+    color: cadetblue;
+}
+
+table{
+    border: 5px inset red;
+    background: #FFE4C4;
+}
+
+thead{
+    color: brown;
+    font-family:fantasy;
+    font-size: 15px;
+}
+
+tbody{
+    color: coral;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+td{
+    border: 2px outset blue; 
+    padding: 5px;
+    text-align: center;
+    background: #F5F5F5;
+}

@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+        <meta charset="UTF-8">
+        <title>Startup</title>
+        <link rel="stylesheet" href="css/mainstyle.css">
+   
+  
+</head>
+
+<body>
+     <div class="container">
+            <header> 
+                <h1 class="title">Startup publisher</h1>
+                <nav>
+                    <a href="homepage.html" >Startups</a>
+                    <a href="details.html">Details</a>
+                    <a href="registration.html">Registration</a>
+                    <a href="JSworks.html" class="selected_nav">JSworks</a>
+                     <a href="index.html">Lab1</a>
+                </nav>
+            </header>
+            <div class="header_line"></div>
+               <h2 class="content_header">60 Best Startups You Need to Watch Out for in 2019</h2>
+            <div class="header_line"></div>
+            <div class="content">
+    <b>Press the back button</b> 
+<input type="button" value="Back" onclick="previousPage()"> 
+<script> 
+function previousPage() { 
+    window.history.back(); 
+} 
+</script>
+    <style>
+        .containerrr {
+            width: 50%;
+            margin-left: 25%;
+        }
+        
+        table {
+            border: 2px solid purple;
+            width: 100%;
+        }
+        
+        thead {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        
+        td {
+            border: 1px dotted blue;
+            padding: 5px;
+        }
+    </style>
+    <div class="containerrr">
+        <h3>a = 1, b = 3, n = 8</h3>
+        <h3>function = Math.sqrt(2.5 - Math.abs(Math.cos(x))*Math.pow(x,2))</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>x</td>
+                    <td>f(x)</td>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script>
+        var a = 1;
+        var b = 3;
+        var n = 8;
+        var h = (b - a) / n;
+        var minX = a;
+        var minY = Math.sqrt(2.5 - Math.abs(Math.cos(a))*Math.pow(a,2));
+        var maxX = minX;
+        var maxY = minY;
+        var tbody = document.getElementById('tbody');
+        for (var i = 0; i < n; i++) {
+            var newRow = document.createElement('tr');
+            var newTdX = document.createElement('td');
+            var newTdY = document.createElement('td');
+            var x = a + i * h;
+            var y = Math.sqrt(2.5 - Math.abs(Math.cos(x))*Math.pow(x,2));
+            if (y < minY) {
+                minY = y;
+                minX = x;
+            }
+            if (y > maxY) {
+                maxY = y;
+                maxX = x;
+            }
+            newTdX.innerHTML = x;
+            newTdY.innerHTML = y;
+            newRow.appendChild(newTdX);
+            newRow.appendChild(newTdY);
+            tbody.appendChild(newRow);
+        }
+        var newRow = document.createElement('tr');
+        var newTdX = document.createElement('td');
+        var newTdY = document.createElement('td');
+        newTdX.innerHTML = 'max x = ' + maxX;
+        newTdY.innerHTML = 'max f(x) = ' + maxY;
+        newRow.appendChild(newTdX);
+        newRow.appendChild(newTdY);
+        newRow.style.backgroundColor = 'pink';
+        tbody.appendChild(newRow);
+        var newRow = document.createElement('tr');
+        var newTdX = document.createElement('td');
+        var newTdY = document.createElement('td');
+        newTdX.innerHTML = 'min x = ' + minX;
+        newTdY.innerHTML = 'min f(x) = ' + minY;
+        newRow.appendChild(newTdX);
+        newRow.appendChild(newTdY);
+        newRow.style.backgroundColor = 'green';
+        tbody.appendChild(newRow);
+    </script>
+                 <textarea id="text" cols="30" rows="10" placeholder="Write your text here"></textarea>
+    <br>
+    <input id="letters" type="text" placeholder="Search words">
+    <button onclick="words()">Search</button>
+    <div id=row></div>
+    <script>
+        function words() {
+            var a = [];
+            var arr = document.getElementById('text').value.split(' ');
+            var searchText = document.getElementById('letters').value;
+            arr.forEach(function (item) {
+                if (item.indexOf(searchText) != -1) {
+                    a.push(item);
+                }
+            });
+            var table = document.createElement('table');
+            table.setAttribute('border', '1');
+            table.setAttribute('style', 'table-layout:fixed; width:200px;');
+            document.querySelector('#row').appendChild(table);
+            a.forEach(function (item) {
+                let tr = document.createElement('tr');
+                let word = document.createElement('td');
+                word.innerHTML = item;
+                tr.appendChild(word);
+                table.appendChild(tr);
+            });
+        }
+    </script>
+         </div>
+    </div>
+</body>
+
+</html>

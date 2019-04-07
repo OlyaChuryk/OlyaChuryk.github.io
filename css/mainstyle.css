@@ -1,0 +1,166 @@
+@font-face{
+    font-family: FANTASY;
+}
+
+body{
+    background: #ececf9;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    color: #000;
+}
+
+header{
+    background-image: url(background_header.jpg);
+    width: 100%;
+    height: auto;
+}
+
+.title{
+    font-family: sans-serif;
+    font-style: oblique;
+    font-size: 60px;
+    color: #419a9a;
+    text-shadow: #5dc8e5 0 0 10px;
+}
+
+nav{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selected_nav{
+    color: #7B68EE;
+}
+
+a{
+    font-family: Georgia;
+    font-size: 40px;
+    color: #000;
+    text-decoration: none;
+    padding: 4px;
+}
+a:hover{
+    color:  #EE82EE;
+}
+
+.header_line{
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(to right,  #ececf9,  #419a9a,  #ececf9);
+}
+
+.container{
+    width: 100%;
+    margin: 50px 0;
+}
+
+.content_header{
+    font-family: Times New Roman;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.content{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content_row_det{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content_item{
+    width: 30%;
+}
+
+.content_item__img{
+    width: 100%;
+}
+
+.content_item_descr{
+    width: 30%;
+}
+
+.content_item__img_descr{
+    width: 100%;
+}
+
+.content_item__descr{
+    font-family: Georgia;
+    font-size: 35px;
+    color: #000;
+    text-align: center;
+}
+.content_item_full_descr{
+   font-family: Georgia;
+    font-size: 35px;
+    color: #329934;
+    text-align: center;
+}
+.leftimg {
+    float:left; 
+    margin: 7px 7px 7px 0; 
+   }
+.rightimg  {
+    float: right; 
+    margin: 7px 0 7px 7px; 
+   }
+.reg_form{
+    width: 40%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg_form__input_text{
+    padding: 5px 10px;
+    font-family: Georgia;
+    font-size: 30px;
+    margin: 15px 0;
+    border-radius: 3px;
+}
+
+.reg_form__input_text:focus{
+    border-color: #d9b3ff;
+    border-radius: 10px;
+    outline: none;
+}
+
+.reg_form__submit{
+    padding: 5px 10px;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 15px 0;
+    border-radius: 10px;
+    background: #ccffff;
+    color: #0d0d26;
+    border-color: #ccffff;
+}
+
+.reg_form__submit:hover{
+    cursor: pointer;
+    background: #0d0d26;
+    color: #ccffff;
+}
+.reg_form__submit:focus{
+    outline: none;
+}
+
+
+
+
